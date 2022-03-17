@@ -1,0 +1,62 @@
+<html>
+<title> Integration 2019 | MTRP </title>
+<style type="text/css">
+#admit-form {margin: 0 auto;width: 40%}
+#admit-form input[type="text"]{
+    padding: 5px 5px; line-height: 10px;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0 1em;
+}
+
+</style>
+<body>
+
+<script>
+    function validateForm(form) {
+        const regex = /^MTRP19\/(DP|CC|CO|WG|BG)\/(IX|XI)\/\d{4}/;
+        if (regex.test(form.roll_no.value) == false) 
+        {
+            alert("Roll No must be valid");
+            form.roll_no.focus();
+            return false;
+        }
+        return true;
+    }
+</script>
+   <h2><center>INDIAN STATISTICAL INSTITUTE</center></h2> 
+    <center><img src='images/logo.png' width="70" height="80"></center>
+    <center><h2><u>Mathematics Talent Reward Programme, 2019</u></h2></center>
+    <center><h3>Generate/Print Admit Card</h3></center>
+
+    <div id='admit-form' name="admit-form">
+        <form method="POST" action="cand_details.php" onsubmit="return validateForm(this)">
+            <table>
+                <tr>
+                    <td align="right">Venue:</td>
+                    <td align="left"><select name="venue" required>
+                        <option value="CC">Kolkata</option>
+                        <option value="DP">Durgapur</option>
+                        <option value="CO">Cooch Behar</option>
+                        <option value="BG">Bangalore</option>
+                        <option value="WG">Warangal</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td align="right">Class:</td>
+                    <td align="left"><select name="class" required>
+                        <option value="IX">IX</option> 
+                        <option value="XI">XI</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td align="left"><input type="submit" value="Get all details"></td> 
+                </tr>
+                </table>
+        </form>
+    </div>
+</body>
+
+</html>

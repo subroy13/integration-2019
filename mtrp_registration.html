@@ -1,0 +1,129 @@
+<html>
+<title> MTRP | Integration 2019 </title>
+<link rel="icon" href="./img/integration_logo_icon.ico">
+<style type="text/css">
+#reg-form {margin: 0 auto;width: 60%}
+#reg-form input[type="text"], input[type="email"], input[type="radio"], select{
+    padding: 5px 5px; line-height: 10px;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0 1em;
+}
+
+</style>
+
+<script>
+//window.location.replace("http://www.isical.ac.in/~integration/under_main.html");
+
+  function validate() {
+        const regex = /^\d{10}$/;
+        if (regex.test(regform.phno.value) == false) 
+        {
+            document.getElementById('errfn').innerHTML="Invalid Phone Number!";
+            regform.phno.focus();
+            
+        }
+	else{
+		document.getElementById('errfn').innerHTML="";
+	}
+        //return true;
+    }
+
+</script>
+<body>
+
+   <br><h1><font face="verdana"><center>INTEGRATION 2019</center></font></h1> 
+    <center><img src='./img/Integration_logo.png' width="88" height="80"></center> <br/>
+    <center><img src='images/oxford_logo.jpg' width="150" height="80"></center>
+    <center><h2><u>Mathematics Talent Reward Programme, 2019</u></h2></center>
+    <center><h3>Registration Form</h3></center>
+    <div id="instruction">
+        <h3>Instructions</h3>
+        <ul>
+            <li>All fields of the form below is to be filled properly.</li>
+	    <li><b>Once you submit the form, you have to pay the fees immediately.</b> There is no scope of paying later.</li>
+	    <li>After successful completion of the payment, Admit Card will automatically be generated and displayed on browser, should be downloaded and printed by the candidate.</li>
+	    <li>Student should carry his/her <b>Aadhar card as ID proof</b> along with his <b>Admit Card and Ticket</b> during the time of the exam.</li>
+            <li>Date: 20/01/2019</li>
+            <li>Time: <b>10 a.m. - 12.30 p.m. for XI</b> and <b>2 p.m. - 4.30 p.m. for IX.</b> </li>
+            <li>Last date for online registration is <b>13-th January, 2019.</b></li>
+            <li>If you choose to include Problem Primer, please pay accordingly. After payment verification, the hard copy of problem primer will be sent to you. </li>
+	    <li> <b> If you have already registered and paid for examination only, you can still buy the Problem Primer or complete your failed payment. <a href='go_to_payment.html'>Click Here</a> to continue. </b> </li>
+	    <li>Postal <b>delivery charge</b> of the problem primer is to be <b>paid by the candidate.</b></li>
+	    <li>If you face any online registration related problem, call at +919476160028.</li>
+	    <li>For further queries contact : <br/>
+                <br/>    Mr. Soham Bonnerjee  	+918240378256
+                <br/>    Mr. Dibyendu Saha  	+918697503818
+                <br/>    Mr. Riddhiman Saha  	+917699987758
+            </li>
+        </ul>
+    </div>
+
+    <div id='reg-form'>
+        <form name='regform' method="POST" action="submit.php">
+            <table>
+                <tr>
+                    <td align="right">Name:</td>
+                    <td align="left"><input type="text" name="name" size="50" required/></td>
+                </tr>
+                <tr>
+                    <td align="right">Guardian's Name:</td>
+                    <td align="left"><input type="text" name="guard_name" size="50" required/></td>
+                </tr>
+                <tr>
+                    <td align="right">Email Address:</td>
+                    <td align="left"><input type="email" name="email" required size="50" /></td>
+                </tr>
+                <tr>
+                    <td align="right">Class:</td>
+                    <td align="left"><select name="class" required>
+                        <option value="IX">IX (9)</option> 
+                        <option value="XI">XI (11)</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td align="right">Telephone/Mobile Number:</td>
+                    <td align="left"><input type="text" name="phno" size="50" onblur="validate()" required/></td>
+		    <td align="left" size="50"><div id="errfn"></div></td>
+                </tr>
+                <tr>
+                    <td align="right">Postal Address:</td>
+                    <td align="left"><textarea name="post_addr" style="margin: 0px; height: 110px; width: 450px;" required></textarea></td>
+                </tr>
+                <tr>
+                    <td align="right">Preferred Medium:</td>
+                    <td align="left">
+                        <input type="radio" name="medium" value="en"> English<br>
+                        <input type="radio" name="medium" value="bn"> Bengali<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">Name & Address of School:</td>
+                    <td align="left"><textarea name="school_addr" style="margin: 0px; height: 110px; width: 450px;" required></textarea></td>
+                </tr>
+                <tr>
+                    <td align="right">Preferred Venue:</td>
+                    <td align="left"><select name="venue" required>
+                        <option value="CC">Kolkata</option>
+                        <option value="DP">Durgapur</option>
+                        <option value="CO">Cooch Behar</option>
+                        <!--<option value="BG">Bangalore</option>-->
+                        <option value="WG">Warangal</option>
+                    </select></td>
+                </tr>
+		<tr>
+		    <td align="right">Include MTRP Problem Primer:</td>
+                    <td align="left"><input type="radio" name="primer" value="Yes" checked> Yes 
+                                     <input type="radio" name="primer" value="No"> No
+		</tr>
+                <tr>
+                    <td></td>
+                    <td align="left"><input type="submit"/></td> 
+                </tr>
+                </table>
+        </form>
+    </div>
+</body>
+
+</html>

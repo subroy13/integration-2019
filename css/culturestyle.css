@@ -1,0 +1,61 @@
+@font-face {
+  font-family: GOT;
+  src: url("../font/game-of-thrones/Game\ of\ Thrones.ttf");
+}
+
+main {
+  background: url("../img/culturalfest/culture-cover.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.gylphs {
+  color: #fff;
+}
+
+#main-title {
+  font-family: GOT !important;
+  text-transform: uppercase;
+  color: ghostwhite;
+  text-shadow: 0 1px 0 rgb(204, 204, 204), 0 2px 0 rgb(201, 201, 201),
+    0 3px 0 rgb(187, 187, 187), 0 4px 0 rgb(185, 185, 185),
+    0 5px 0 rgb(170, 170, 170), 0 6px 1px rgba(0, 0, 0, 0.0980392),
+    0 0 5px rgba(0, 0, 0, 0.0980392), 0 1px 3px rgba(0, 0, 0, 0.298039),
+    0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.247059),
+    0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.14902);
+  font-weight: 900;
+}
+
+#festname {
+  font-family: GOT;
+  font-size: 175%;
+  background: -webkit-linear-gradient(#f00, #ff0, #0f0, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#festname span {
+  font-size: 150%;
+  font-weight: bold;
+}
+
+hr {
+  background: ghostwhite;
+}
+
+.card-link:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(1.15);
+  z-index: 10;
+  transition: 500;
+}
+
+@media (max-width: 500px) {
+  main .container {
+    padding-top: 100px;
+  }
+
+  #main-title {
+    font-size: 50px;
+  }
+}

@@ -1,0 +1,154 @@
+<html>
+    <title>MathGeek | Integration 2019</title>
+    <link rel="icon" href="./img/integration_logo_icon.ico" />
+    <style type="text/css">
+        #reg-form {
+            margin: 0 auto;
+            width: 60%;
+        }
+        #reg-form input[type="text"],
+        input[type="email"],
+        input[type="radio"],
+        select {
+            padding: 5px 5px;
+            line-height: 10px;
+        }
+        table {
+            border-collapse: separate;
+            border-spacing: 0 1em;
+        }
+    </style>
+
+    <script>
+        //window.location.replace("http://www.isical.ac.in/~integration/under_main.html");
+
+        function validate() {
+            const regex = /^\d{10}$/;
+            if (regex.test(regform.phno.value) == false) {
+                document.getElementById("errfn").innerHTML = "Invalid Phone Number!";
+                regform.phno.focus();
+            } else {
+                document.getElementById("errfn").innerHTML = "";
+            }
+            //return true;
+        }
+    </script>
+    <body>
+        <br />
+        <h1>
+            <font face="verdana"><center>INTEGRATION 2019</center></font>
+        </h1>
+        <center><img src="./img/Integration_logo.png" width="88" height="80" /></center>
+        <br />
+        <!--<center><img src='images/oxford_logo.jpg' width="150" height="80"></center>-->
+        <center>
+            <h2><u>MathGeek, 2019</u></h2>
+        </center>
+        <center><h3>Registration Form</h3></center>
+        <div id="instruction">
+            <h3>Please Read the following Instructions carefully...</h3>
+            <ul>
+                <li>All fields of the form below is to be filled properly.</li>
+                <li><b>Once you submit the form, you have to pay the fees immediately.</b> There is no scope of paying later.</li>
+                <li>
+                    After successful completion of the payment, you will be given a password which you use to log in later. Your
+                    username is the email address you have provided below.
+                </li>
+                <li>It is an online event. So, you are recommended to use a computer rather than mobile devices.</li>
+                <li>There are 9 rounds.</li>
+                <li>Each round has 3 unlocking puzzles which helps to go from one round to another.</li>
+                <li>
+                    Questions will be such that not much professional knowledge of mathematics is required (upto +2 and some
+                    undergrad things) so that everybody will be on same page.
+                </li>
+                <li>It is open to all age groups.</li>
+                <li><strong>Entry Fees:</strong> 50 Rs. per head which should be payed at the time of online registration.</li>
+                <li>Prize money worth Rs. 2,000</li>
+                <li>
+                    Note that in Round 6 or 7, upon solving each problem correctly you have to send the logic behind your answer
+                    to mathgeek.integration@gmail.com. You can do this by either of the following methods.
+                    <ul>
+                        <li>
+                            You may write the logic in a piece of paper in legible handwriting and then click a clear picture of
+                            that and send it.
+                        </li>
+                        <li>
+                            Or you may write the logic in Ms-Word or any of your favourite Word processing software and send the
+                            .doc (or .pdf) file.
+                        </li>
+                    </ul>
+                    NOTE THAT YOUR IMAGE OR WORD FILE NAME SHOULD BE LIKE “R6,P1” IF IT CONTAINS THE SOLUTION OF PROBLEM 1 OF
+                    ROUND 6.IF YOU DON’T FOLLOW THESE INSTRUCTIONS FOR THESE ROUNDS YOU WON’T BE CONSIDERED FOR REWARDS
+                    IRRESPECTIVE OF HOW MUCH YOU HAVE PROCEEDED.
+                </li>
+                <li>
+                    Note that you can attempt a single question at most 10 times in round 1-3. This maximum number of attempts
+                    will be reduced to 5 for Round 4-5 and will be further reduced to 3 in Round 6-9. SO, USE YOUR PRECIOUS
+                    ATTEMPTS WISELY!
+                </li>
+                <li>
+                    For answers in numbers, you should answer that number without any blank space. If an answer is Infinity, then
+                    type INFINITE as your answer.
+                </li>
+                <li>
+                    For answers in words, type the letters in Capital. So, if the answer is 'Integration', then type 'INTEGRATION'
+                    as your answer (without the quotes).
+                </li>
+                <li>
+                    For a question that asks for two answers, separate the answers by a comma. For example, if the answer to two
+                    sub-questions are "Apple" and "1234", then type your answer as APPLE,1234
+                </li>
+                <li>
+                    If the answer is 5tan(pi/15), where pi is the ratio of the perimeter to the diameter of a circle, then answer
+                    this as 5TAN(PI/15)
+                </li>
+                <li>If you face any online registration related problem, call at +919476160028.</li>
+                <li>
+                    For further queries contact : <br />
+                    <br />
+                    <strong>Deep Ghoshal:</strong> +91 8906723662 <br />
+                    <strong>Aditya Ghosh:</strong> +91 9163658233 <br />
+                    <strong>Anirban Nath:</strong> +91 9051227133 <br />
+                    Or mail us at: <strong>mathgeek.integration@gmail.com</strong>
+                </li>
+                <li>
+                    <strong
+                        >The organisers reserve the right to change any of the rules, timings and other details such as prize
+                        money at any point of time. In case of any dispute, the decision of the organisers is final.</strong
+                    >
+                </li>
+            </ul>
+        </div>
+
+        <div id="reg-form">
+            <form name="regform" method="POST" action="mg_submit.php">
+                <table>
+                    <tr>
+                        <td align="right">Name:</td>
+                        <td align="left"><input type="text" name="name" size="50" required /></td>
+                    </tr>
+                    <tr>
+                        <td align="right">Email Address:</td>
+                        <td align="left"><input type="email" name="email" required size="50" /></td>
+                    </tr>
+
+                    <tr>
+                        <td align="right">Mobile Number:</td>
+                        <td align="left"><input type="text" name="phno" size="50" onblur="validate()" required /></td>
+                        <td align="left" size="50"><div id="errfn"></div></td>
+                    </tr>
+                    <tr>
+                        <td align="right">School/ College:</td>
+                        <td align="left">
+                            <textarea name="school_addr" style="margin: 0px; height: 110px; width: 450px;" required></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td align="left"><input type="submit" /></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>

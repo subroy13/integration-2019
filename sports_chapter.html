@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sports Chapter | Integration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./img/integration_logo_icon.ico">
+    <meta name="author" content="Subhrajyoty Roy">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/sportstyle.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("body").css({
+                'overflow-x':'hidden',
+                'overflow-y':'auto',
+                'width':'100%',
+            });
+            $(".card-link").click(function(){
+                $("main").css({
+                    background: "#444"
+                });
+            });
+            $(".close").click(function(){
+                $("main").css({
+                    background: "url('./img/sportsfest/sports-cover.jpeg')",
+                    'background-size': 'cover',
+                    'background-position': 'center center',
+                });
+            });
+            var text = "<marquee>";
+            var i;
+            for (i=1; i<22; i++) {
+                text += "<img src='./img/sponsors/"+ i +".jpg' style = 'height:75px'>";
+            }
+            text += "</marquee>";
+            $('#footer-sponsor').html(text);
+        });
+    </script>
+    <style>
+        .btn-primary a {
+            color: ghostwhite;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg unique-color-dark fixed-top">
+            <div class="container">
+
+                <a class="navbar-brand" style="color:#fff" href="./index.html">
+                    <img src="./img/Integration_logo.png" height="30" class="d-inline-block align-top" alt="">
+                    Integration 2019
+                </a>
+                    
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="mail.link">
+                                <i class="fa fa-envelope ml-5 gylphs"></i>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                                <a href="https://www.facebook.com/integration.isi">
+                                    <i class="fa fa-facebook-official ml-5 gylphs"></i>
+                                </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.twitter.com/integration_isi">
+                                <i class="fa fa-twitter ml-5 gylphs"></i>
+                            </a>
+                        </li>
+
+                            
+                    </ul>
+
+            </div>
+        </nav>
+        <!--/.Navbar-->
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="text-center">
+                <h1 class="mb-5 mt-5 pt-5 display-1" id="main-title">Sports Chapter</h1>
+                <hr>
+                <h1 class="mb-3 mt-3" id="festname">Integration <span>2019</span>
+                    <img src="./img/Integration_logo.png" style="width: 50px">
+                </h1>
+                <hr>
+            </section>
+            <div class="card-deck mb-5 mt-5">
+                    <div class="col-sm-4">
+                        <!--Cricket-->
+                        <a type="button" class="card card-link" data-toggle="modal" data-target="#cricket">
+                                <img class="card-img-top" src="./img/sportsfest/IMG_6182.jpeg" alt="Card image cap">
+                                <div class="card-body">
+                                <h5 class="card-title">Gully Cricket</h5>
+                                <p class="card-text">Come have a shot at your favourite game at your favourite sports fest Things are bound to get competitive especially when it's a matter of pride.</p>
+                                </div>
+                        </a>
+                        <div class="modal fade" id="cricket" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Gully Cricket</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                <div class="modal-body">
+                                    <p><strong>General Details:</strong></p>
+                                    <ul>
+                                        <li>Each team must consist of 10 players + max 3 subs</li>
+                                        <li>Each member of the team should be either a school student or a college student.</li>
+                                        <li><strong>Registration Fee:</strong> ₹750 per team</li>
+                                        <li>Total Prize Money worth ₹8000</li>
+                                        <li>All students must carry a student-identity card.</li>
+                                    </ul>
+                                    <button class="btn btn-primary"><a href="https://www.townscript.com/e/integration-cricket-tournament-2019-103412" target="_blank">Click here to Register</a></button>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <!--Cricket-->
+
+                        <!--Tennis-->
+                        <a type="button" class="card card-link mt-3" data-toggle="modal" data-target="#tennis">
+                                <img class="card-img-top" src="./img/sportsfest/table-tennis.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                <h5 class="card-title">Table Tennis</h5>
+                                <p class="card-text">Show your speed and techniques in the Table Tennis competition held as a part of Sports Chapter of INTEGRATION, presented by Indian Statistical Institute, Kolkata.</p>
+                                </div>
+                        </a>
+                        <div class="modal fade" id="tennis" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Table Tennis</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                <div class="modal-body">
+                                    <p><strong>General Details:</strong></p>
+                                    <ul>
+                                        <li>Singles and doubles tournament will be organized separately.</li>
+                                        <li>Each player should be either a school student or a college student.</li>
+                                        <li>Prize Money worth ₹7500</li>
+                                        <li>All students must carry a student-identity card.</li>
+                                    </ul>
+                                    <p><strong>Registration Fees:</strong></p>
+                                    <ul>
+                                        <li>₹100 per person for singles.</li>
+                                        <li>₹200 for doubles per team.</li>
+                                    </ul>
+                                    <button class="btn btn-primary"><a href="https://www.townscript.com/e/tabletennis-404104" target="_blank">Click here to Register</a></button>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <!--Tennis-->
+                    </div>
+        
+                    <div class="col-sm-8">
+                            <div class="card" style="background: transparent">
+                                <div class="card-deck">
+                                    <!--Chess-->
+                                        <a type="button" class="card card-link" data-toggle="modal" data-target="#Chess">
+                                            <img class="card-img-top" src="./img/sportsfest/pexels-photo-1040157.jpeg" alt="Card image cap">
+                                            <div class="card-body">
+                                            <h5 class="card-title">Chess</h5>
+                                            <p class="card-text">The war between two brains cannot take a better form.
+                                                    The gleaming ivory pieces. The stern king. The haughty queen. The noble knight. The pious bishop. And the game itself, the way each piece contributed its individual power to the whole. It was simple. It was complex. It was savage; it was elegant. It was a dance; it was a war. It was finite and eternal. It was life.</p>
+                                            </div>
+                                        </a>
+        
+                                        <div class="modal fade" id="Chess" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                                            <div class="modal-dialog modal-lg">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLongTitle">Chess</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                        </div>
+                                                    <div class="modal-body">
+                                                        <p>The participants will be divided into four age-groups (as on 27th-28th January 2018)</p>
+                                                        <ol>
+                                                            <li><strong>Group 1:</strong> 0-10 years.</li>
+                                                            <li><strong>Group 2:</strong> 10-13 years.</li>
+                                                            <li><strong>Group 3:</strong> 13-16 years.</li>
+                                                            <li><strong>Group 4:</strong> Open (above 16 but college student)</li>
+                                                        </ol>
+                                                        <p><strong>Registriation Fees:</strong></p>
+                                                        <ol>
+                                                            <li><strong>Group 1:</strong> ₹200</li>
+                                                            <li><strong>Group 2:</strong> ₹300</li>
+                                                            <li><strong>Group 3:</strong> ₹300</li>
+                                                            <li><strong>Group 4:</strong> ₹350</li>
+                                                        </ol>
+                                                        <p><strong>General Guidelines:</strong></p>
+                                                        <ul>
+                                                            <li>Each player should be either a school student or a college student.</li>
+                                                            <li> It will be a 8 round tournament+Swiss League+30 Minutes Rapid Chess.</li>
+                                                            <li>All students must carry a student-identity card.</li>
+                                                            <li>A food packet will be given to each player.</li>
+                                                        </ul>
+                                                        <p><strong>Prize Money:</strong></p>
+                                                        <ol>
+                                                            <li>
+                                                                <p><strong>Group 1:</strong></p>
+                                                                <ul>
+                                                                    <li>Winner prize worth ₹2,000</li>
+                                                                    <li>Runner's Up prize worth ₹1,000 </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                    <p><strong>Group 2:</strong></p>
+                                                                    <ul>
+                                                                        <li>Winner prize worth ₹2,000</li>
+                                                                        <li>Runner's Up prize worth ₹1,000 </li>
+                                                                    </ul>
+                                                            </li>
+                                                            <li>
+                                                                    <p><strong>Group 3:</strong></p>
+                                                                    <ul>
+                                                                        <li>Winner prize worth ₹2,000</li>
+                                                                        <li>Runner's Up prize worth ₹1,000 </li>
+                                                                    </ul>
+                                                            </li>
+                                                            <li>
+                                                                    <p><strong>Group 4:</strong></p>
+                                                                    <ul>
+                                                                        <li>Winner prize worth ₹3,000</li>
+                                                                        <li>Runner's Up prize worth ₹2,000 </li>
+                                                                        <li>2nd Runner's Up prize worth ₹1,000</li>
+                                                                    </ul>
+                                                            </li>
+                                                        </ol>
+                                                        <button class="btn btn-primary"><a href="https://www.townscript.com/e/chess-214411" target="_blank">Click here to Register</a></button>
+                                
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <!--Chess-->
+                                </div>
+                            </div>
+                    </div>
+            </div>
+
+            <hr>
+            <div class="card-deck pb-5 mt-5">
+                    <div class="col-sm-7">
+                        <!--Football-->
+                        <a type="button" class="card card-link" data-toggle="modal" data-target="#football">
+                            <img class="card-img-top" src="./img/sportsfest/the-ball-stadion-football-the-pitch-39562.jpeg" alt="Card image cap">
+                            <div class="card-body">
+                            <h5 class="card-title">Football</h5>
+                            <p class="card-text">The football tournament gives you a chance to show off your skills and stamina on the field and also compete with some of the best football teams in the city.</p>
+                            </div>
+                        </a>
+
+                        <div class="modal fade" id="football" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Football</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        </div>
+                                    <div class="modal-body">
+                                        <p><strong>Registration Fees:</strong> ₹3000 per team</p>
+                                        <p><strong>Total Prize money</strong> worth ₹22000.</p>
+                                        <p><strong>General Details:</strong></p>
+                                        <ul>
+                                            <li>Matches will be held on 26th - 28th January, 2019.</li>
+                                            <li>Each team must consist of 8 players + 5 subs.</li>
+                                            <li>Each member of the team should be either a school student or a college student(Please bring valid ID proof else the team members will not be allowed to enter the tournament).</li>
+                                            <li>Organizers' decisions on any matter will be final.</li>
+                                        </ul>
+                                        <button class="btn btn-primary"><a href="https://www.townscript.com/e/football-440013" target="_blank">Click here to Register</a></button>
+                                
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Football-->
+
+                        <!--Volleyball-->
+                        <a type="button" class="card card-link mt-3" data-toggle="modal" data-target="#Volleyball">
+                                <img class="card-img-top" src="./img/sportsfest/posters-volleyball-background.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                <h5 class="card-title">Volleyball</h5>
+                                <p class="card-text">A good team can win a volleyball game when they are ahead, a great team can win when they are behind. 28. Don't let the ball hit the ground without a body hitting the ground with it.</p>
+                                </div>
+                        </a>
+
+                        <div class="modal fade" id="Volleyball" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Volleyball</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        </div>
+                                    <div class="modal-body">
+                                        <p><strong>Registration Fees:</strong> ₹800</p>
+                                        <p><strong>Prize money</strong> worth ₹4500</p>
+                                        <p><strong>General Details:</strong></p>
+                                        <ul>
+                                            <li>It is a knockout tournament.</li>
+                                            <li>Matches will be of 3 sets of 15 points each.</li>
+                                            <li>Finals will be of 3 sets of 25 points each.</li>
+                                            <li>All standard FIVB rules (except for serve, rotation and libero) are applicable.</li>
+                                            <li>All students must carry a student-identity card.</li>
+                                            <li>Decision of the match officials is final and teams are supposed to co-operate with them.</li>
+                                            <li>Unsporting behavior by any player on or off the field will be dealt with strictly and may result in expulsion of his team even.</li>
+                                            <li>Further rules will be explained to the team captains before start of a match.</li>
+                                        </ul>
+                                        <p><strong>The organisers reserve the right to change any of the rules, timings and other details such as prize money at any point of time. In case of any dispute, the decision of the organisers is final.</strong></p>
+                                        <button class="btn btn-primary"><a href="https://www.townscript.com/e/volleyball-431130" target="_blank">Click here to Register</a></button>
+                                
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Volleyball-->
+                    </div>
+                <div class="col-sm-5">
+                    <!--Bridge-->
+                        <a type="button" class="card card-link" data-toggle="modal" data-target="#bridge">
+                                <img class="card-img-top" src="./img/sportsfest/night.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                <h5 class="card-title">Bridge</h5>
+                                <p class="card-text">"A winner listens to his partner's point of view, a loser waits until it's time to express his own".</p>
+                                </div>
+                        </a>
+                        <div class="modal fade" id="bridge" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Bridge</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                <div class="modal-body">
+                                    <p>Integration presents Bridge tournament as part of its sports chapter.
+                                            Come, show off your skill and you may take back the prize money worth ₹6000
+                                            </p>
+                                    <p><strong>Entry Fee:</strong> ₹100 per pair.</p>
+                                    <p><strong>General Rules:</strong></p>
+                                    <ol>
+                                        <li>The tournament will be a 1-day match pair event.</li>
+                                        <li>It will be conducted under strict supervision of WBBA.</li>
+                                        <li>Please carry your age proof with you.</li>
+                                        <li>The decision of the organizers will be held final.</li>
+                                    </ol>
+                                    <button class="btn btn-primary"><a href="https://www.townscript.com/e/bridge-441130" target="_blank">Click here to Register</a></button>
+                                
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <!--Bridge-->
+
+                        <!--Carrom-->
+                        <a type="button" class="card card-link mt-3" data-toggle="modal" data-target="#carrom">
+                                <img class="card-img-top" src="./img/sportsfest/carrom.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                <h5 class="card-title">Carrom</h5>
+                                <p class="card-text">Carrom competition to be held as a part of Integration 2019, the annual techno-cultural-sports fest of ISI Kolkata.</p>
+                                </div>
+                        </a>
+                        <div class="modal fade" id="carrom" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Carrom</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                <div class="modal-body">
+                                    <p><strong>Venue:</strong> 205 B.T. Road, Hostel Campus, ISI Kolkata.</p>
+                                    <p><strong>Time:</strong> 10 A.M.</p>
+                                    <p><strong>Registration Fees:</strong> ₹50 for singles and a total of ₹100 for doubles.</p>
+                                    <p>Total <strong>Prize Money</strong> is worth ₹4000.</p>
+                                    <p><strong>Rules:</strong></p>
+                                    <ul>
+                                        <li>You need to be a student to participate in the competition. You should carry a valid identity card of the current institution where you're studying.</li>
+                                        <li>All the standard rules are applicable. For details, you can have a look at <a href="http://bit.ly/1nNcj2S">here</a></li>
+                                        <li>Players will not be allowed to use any striker that violates the aforementioned rule, if his/her opponent complains.</li>
+                                    </ul>
+                                    <button class="btn btn-primary"><a href="https://www.townscript.com/e/carrom-441443" target="_blank">Click here to Register</a></button>
+                                 
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <!--Carrom-->
+                </div>
+        
+                    
+            </div>
+        </div>
+    </main>
+
+
+    <!-- #################################################################### -->
+
+   <!--Footer-->
+   <footer class="page-footer font-small darkgrey">
+
+    <!-- Social buttons -->
+    <div class="success-color">
+        <div class="container">
+            <!--Grid row-->
+            <div class="row py-4 d-flex align-items-center">
+
+                <!--Grid column-->
+                <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                    <h6 class="mb-0 white-text">Our Valuable Sponsors</h6>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-6 col-lg-7 text-center text-md-left" id="footer-sponsor">
+                    </div>
+                <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+        </div>
+    </div>
+    <!-- Social buttons -->
+    </footer>
+    <!--Footer Links-->
+
+<!--Footer-->
+<footer class="page-footer font-small unique-color-dark pt-4">
+
+    <!--Footer Links-->
+    <div class="container mt-5 mb-4 text-center text-md-left">
+    <div class="row mt-3">
+
+        <!--First column-->
+        <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+            <h6 class="text-uppercase font-weight-bold">
+                <strong>Integration 2019</strong>
+            </h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>The Annual Techno-Cultural-Sports festival of Indian Statistical Institute, Kolkata, here at 203, Barrackpore Trunk Road, Kolkata - 700108.</p>
+        </div>
+        <!--/.First column-->
+
+        <!--Second column-->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase font-weight-bold">
+                <strong>Events</strong>
+            </h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+                <a href="#!">Chess</a>
+            </p>
+            <p>
+                <a href="#!">Quizzes</a>
+            </p>
+            <p>
+                <a href="#!">Band-E-Thlon</a>
+            </p>
+            <p>
+                <a href="#!">Alaap</a>
+            </p>
+        </div>
+        <!--/.Second column-->
+
+        <!--Third column-->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase font-weight-bold">
+                <strong>Useful links</strong>
+            </h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+                <a href="http://www.isical.ac.in/~mtrp">MTRP</a>
+            </p>
+            <p>
+                <a href="#!">Hackathon</a>
+            </p>
+            <p>
+                <a href="#!">Showdowns Websites</a>
+            </p>
+            <p>
+                <a href="http://www.isical.ac.in">ISI homepage</a>
+            </p>
+        </div>
+        <!--/.Third column-->
+
+        <!--Fourth column-->
+        <div class="col-md-4 col-lg-3 col-xl-3">
+            <h6 class="text-uppercase font-weight-bold">
+                <strong>Contact</strong>
+            </h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+                <i class="fa fa-home mr-3"></i> Integration 2019</p>
+            <p>
+                <i class="fa fa-envelope mr-3"></i> isi.integration@gmail.com</p>
+            <p>
+                <i class="fa fa-phone mr-3"></i> +91 7980605492 (Sayantan Basu)</p>
+            <p>
+                <i class="fa fa-phone mr-3"></i> +91 9051124171 (Rounak Ray)</p>
+        </div>
+        <!--/.Fourth column-->
+
+    </div>
+    </div>
+    <!--/.Footer Links-->
+
+    <!--Copyright-->
+    <div class="footer-copyright py-3 text-center">
+        © 2018 Copyright:
+        <a href="https://www.isical.ac.in/integration"> Integration.ISI</a>
+        <script type="text/javascript" src="http://counter2.fcs.ovh/private/counter.js?c=99dc7e2d3dfdbbcebc67fdffaf25f6a6"></script>
+        
+    </div>
+    <!--/.Copyright-->
+
+</footer>
+<!--Footer-->
+
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+</html>

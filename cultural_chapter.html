@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Subhrajyoty Roy">
+    <title>Cultural Chapter | Integration</title>
+    <link rel="icon" href="./img/integration_logo_icon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/culturestyle.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("body").css({
+                'overflow-x':'hidden',
+                'overflow-y':'auto',
+                'width':'100%',
+            });
+            $(".card-link").click(function(){
+                $("main").css({
+                    background: "#444",
+                    'background-blend-mode':'lighten',
+                });
+            });
+            $(".close").click(function(){
+                $("main").css({
+                    background: "url('./img/culturalfest/culture-cover.jpg')",
+                    'background-size': 'cover',
+                    'background-position': 'center center',
+                });
+            });
+
+            var text = "<marquee>";
+            var i;
+            for (i = 1; i < 22; i++) {
+                text += "<img src='./img/sponsors/" + i + ".jpg' style = 'height:75px'>";
+            }
+            text += "</marquee>";
+            $('#footer-sponsor').html(text);
+        });
+    </script>
+    
+</head>
+<body>
+    <header>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg unique-color-dark fixed-top">
+            <div class="container">
+
+                <a class="navbar-brand" style="color:#fff" href="./index.html">
+                    <img src="./img/Integration_logo.png" height="30" class="d-inline-block align-top" alt="">
+                    Integration 2019
+                </a>
+                    
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="https://mail.google.com/mail/u/0/#inbox?compose=new">
+                                <i class="fa fa-envelope ml-5 gylphs"></i>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                                <a href="https://www.facebook.com/integration.isi">
+                                    <i class="fa fa-facebook-official ml-5 gylphs"></i>
+                                </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.twitter.com/integration_isi">
+                                <i class="fa fa-twitter ml-5 gylphs"></i>
+                            </a>
+                        </li>
+
+                            
+                    </ul>
+
+            </div>
+        </nav>
+        <!--/.Navbar-->
+    </header>
+
+    <main>
+        
+            <div class="container">
+                <section class="text-center">
+                        <h1 class="mb-5 mt-5 pt-5 display-1" id="main-title">Cultural Chapter</h1>
+                        <hr>
+                        <h1 class="mb-3 mt-3" id="festname">Integration <span>2019</span>
+                            <img src="./img/Integration_logo.png" style="width: 50px">
+                        </h1>
+                        <hr>
+                </section>
+                <section class="text-justify">
+                    <div class="jumbotron">
+                        <h1 class="display-4">Important Notice!</h1>
+                        <p class="lead">Please note that the details about Prize Money and Registration Fees mentioned in the website is <strong>NOT UP TO DATE</strong>. 
+                            Please refer to <a href="https://www.facebook.com/integration.isi/" target="_blank"> our facebook page</a> for the correct details.
+                            The correct details will be updated here soon enough.
+                        </p>
+                    </div>
+                </section>
+                <div class="card-deck mb-5 mt-5">
+        
+                    <div class="col-sm-7">
+                            <div class="card" style="background: transparent">
+                                <div class="card-deck">
+                                    <!--Nikkana-->
+                                    <a type="button" class="card card-link" data-toggle="modal" data-target="#solo-dance">
+                                            <img class="card-img-top" src="./img/culturalfest/girl-dancing-silhouette-2.jpg" alt="Card image cap">
+                                            <div class="card-body">
+                                            <h5 class="card-title">Nikkana (Solo Dance)</h5>
+                                            <p class="card-text">Your body is an instrument that you play to the symphony of dance. This Solo-Dance event has
+                                                    provided year-after-year a stage for the amalgam of Indian and Western Dance categories,
+                                                    where top 20 participants will out-perform each other in Indian/Western Category to lose
+                                                    themselves to this symphony of Dance.
+                                                    </p>
+                                            </div>
+                                    </a>
+                                    <div class="modal fade" id="solo-dance" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLongTitle">Nikkana (Solo Dance)</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                    </div>
+                                                <div class="modal-body">
+                                                    <p><strong>Registration Fees:</strong></p>
+                                                    <ul>
+                                                        <li>₹100 for Team size 1.</li>
+                                                        <li>₹150 for Team size 2</li>
+                                                    </ul>
+                                                    <p><strong>Prize Money</strong> worth ₹5000.</p>
+                                                    <p><strong>General Rules:</strong> These are the rules for western / easter solo both...</p>
+                                                    <ol>
+                                                        <li>Team size is either 1 or 2.</li>
+                                                        <li>Participants must reach registration desk at least 30 minutes before the scheduled time of the
+                                                                event.(i.e. within 8:30 am)
+                                                                </li>
+                                                        <li>Each participant must bring school or college id-card in order to register for this event.</li>
+                                                        <li>No props will be provided from us. Participants are requested not to use any prop or act which
+                                                                may cause harm to themselves or anyone present in the auditorium.
+                                                                </li>
+                                                        <li>Each team (of size 1 or 2) will be allotted MAX 3 minutes to perform.</li>
+                                                        <li>Fusion Dance is allowed.</li>
+                                                        <li>Vulgarity of any kind would lead to instant disqualification from the event. Hence, if the
+                                                                participant feels that the outfit / performance can be deemed as vulgar, it is strongly advised to
+                                                                consult the organizers before putting it on stage. The decision of the organizer will be final in
+                                                                case of any disputes arising due to this reason.
+                                                                </li>
+                                                        <li>The stage must be cleared of all props after every performance by the participant within 2
+                                                                minute.
+                                                                </li>
+                                                        <li>A team will be alloted maximum 5 minutes within which they have to perform and clear all
+                                                                props, violation of which will be resulted into deducting marks and even disqualification from the
+                                                                competition.
+                                                                </li>
+                                                        <li>Participants more than 14 yrs will be allowed to participate. (Age as on 31st Jan 2019)</li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Nikkana-->
+
+                                    <!--Jhankar-->
+                                        <a type="button" class="card card-link" data-toggle="modal" data-target="#group-dance">
+                                                <img class="card-img-top" src="./img/culturalfest/IMG_5826.JPG" alt="Card image cap">
+                                                <div class="card-body">
+                                                <h5 class="card-title">Jhankar (Group Dance)</h5>
+                                                <p class="card-text">This group-dance event portrays the Human Clockwork of art and precision, where the best
+                                                        Dance Groups across the terrain will Integrate to gear up to become a dance machine. These
+                                                        teams will compete in Indian/Western Category of group dance events.
+                                                        </p>
+                                                </div>
+                                        </a>
+                                        <div class="modal fade" id="group-dance" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                                            <div class="modal-dialog modal-lg">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLongTitle">Jhankar (Group Dance)</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                        </div>
+                                                    <div class="modal-body">
+                                                        <p><strong>Registration Fees:</strong> ₹250 per team.</p>
+                                                        <p><strong>Prize money</strong> worth ₹6000.</p>
+                                                        <p><strong>General Rules:</strong></p>
+                                                        <ol>
+                                                            <li>Team size is 3-12.</li>
+                                                            <li>Participants must reach registration desk at least 30 minutes before the scheduled time of the
+                                                                    event.
+                                                                    </li>
+                                                            <li>Each participant must bring college id-card in order to register for this event.</li>
+                                                            <li>No props will be provided from us participants are requested not to use any prop or act which
+                                                                    may cause harm to themselves or anyone present in the auditorium.
+                                                                    </li>
+                                                            <li>Each team will be allotted 5-6 minutes to perform.</li>
+                                                            <li>Fusion Dance is allowed.</li>
+                                                            <li>Vulgarity of any kind would lead to instant disqualification from the event. Hence, if the
+                                                                    participant feels that the outfit / performance can be deemed as vulgar, it is strongly advised to
+                                                                    consult the organizers before putting it on stage. The decision of the organizer will be final in
+                                                                    case of any disputes arising due to this reason.
+                                                                    </li>
+                                                            <li>The stage must be cleared of all props after every performance by the participants within 2
+                                                                    minutes.
+                                                                    </li>
+                                                            <li>A team will be alloted maximum 8 minutes within which they have to perform and clear all
+                                                                    props, violation of which will be resulted into deducting marks and even disqualification from the
+                                                                    competition.
+                                                                    </li>
+                                                            
+                                                        </ol>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <!--Jhankar-->
+                                
+                                    
+                                </div>
+        
+                                <div class="card-deck mt-3">
+                                    <!--contrapunto-->
+                                        <a type="button" class="card card-link" data-toggle="modal" data-target="#contrapunto">
+                                            <img class="card-img-top" src="./img/culturalfest/pexels-photo-210777.jpeg" alt="Card image cap">
+                                            <div class="card-body">
+                                            <h5 class="card-title">Contrapunto</h5>
+                                            <p class="card-text">Where the power of speech shall wipe out the inconsistencies in reasoning.</p>
+                                            </div>
+                                        </a>
+                                        <div class="modal fade" id="contrapunto" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                                            <div class="modal-dialog modal-lg">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLongTitle">Contrapunto</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                        </div>
+                                                    <div class="modal-body">
+                                                        <p><strong>General Rules:</strong></p>
+                                                        <ol>
+                                                            <li>The debate will be conducted in two rounds.</li>
+                                                            <li>The first round will be an extemporaneous debate held on the first day, and 4 teams will qualify into the finals.</li>
+                                                            <li>The final round will be held in the parliamentary-style on the second day.</li>
+                                                            <li>All students must carry a student-identity card.</li>
+                                                            <li>In case you are unable to arrange for your partner, you can still register. We will try to pair two single registrations into one team if both the members agree.</li>
+                                                        </ol>
+                                                        <p><strong>Registration Fees:</strong> Rs. 400 per team.</p>
+                                                        <p><strong>Prize:</strong></p>
+                                                        <ul>
+                                                            <li> 1st prize worth Rs.8000</li>
+                                                            <li> 2nd prize worth Rs.4000</li> 
+                                                             <li>  Best Speaker prize worth Rs.1000.</li> 
+                                                        </ul>
+                                                        <p><strong>For further details contact:</strong></p>
+                                                        <ul>
+                                                            <li><strong> Sayantan Choudhary:</strong> 8902257570</li>
+                                                            <li><strong>  Madhav Sankaranarayanan:</strong> 9176671812</li>  
+                                                            <li><strong>Arghya Chakraborty:</strong> 8250845520</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <!--contrapunto-->
+                                </div>
+                            </div>
+                    </div>
+
+
+                    <div class="col-sm-5">
+                        <!--Alaap-->
+                            <a type="button" class="card card-link" data-toggle="modal" data-target="#Alaap">
+                                    <img class="card-img-top" src="./img/culturalfest/alaap-cover.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Alaap</h5>
+                                    <p class="card-text">Integration presents one of the greatest singing competitions of the city giving an opportunity to showcase your talents.</p>
+                                    <p class="card-text"><small class="text-muted">Time and Venue</small></p>
+                                    </div>
+                            </a>
+                            <div class="modal fade" id="Alaap" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Alaap</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        </div>
+                                    <div class="modal-body">
+                                        <p><strong>Rules and Regulations:</strong></p>
+                                        <ol>
+                                            <li>Each participant will have to submit a registration fees of ?100 on the day on the prelims. (each participant must carry a valid id proof)</li>
+                                            <li>Each participant will get 5 minutes to perform in prelims.</li>
+                                            <li>During the finals, each selected participant will get 10 minutes to perform.</li>
+                                            <li>Recorded tracks are allowed. The participant has to submit the recorded track in a CD. It is advisable to bring a copy in a pen-drive to avoid unforeseen difficulties.</li>
+                                            <li>Participants can be accompanied by instruments. Each participant can either use a recorded track OR maximum two instruments at a time. If the participant plays any instrument, it will be counted as one.</li>
+                                            <li>The judges' choice will be taken as final.</li>
+                                            <li>The organizers have the right to disqualify any participant if they find any on-stage comment or gesture illicit or inappropriate to the occasion.</li>
+                                        </ol>
+                                        <p><strong>For further information contact:</strong></p>
+                                        <ul>
+                                            <li><strong>Ritwik Sadhu:</strong> 7059813809</li>
+                                            <li><strong>Arun Kaushik:</strong> 8903688018</li>
+                                            <li><strong>Navonil Deb:</strong> 9732053010</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        <!--Alaap-->
+
+                        <!--BandeThlon-->
+                            <a type="button" class="card card-link mt-3" data-toggle="modal" data-target="#band-e-thlon">
+                                    <img class="card-img-top" src="./img/culturalfest/IMG_5761.jpeg" alt="Card image cap">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Band-E-Thlon</h5>
+                                    <p class="card-text">With the best campus bands in the country fighting each other, Band-e-thlon promises to be one of the most exciting shows of Integration.</p>
+                                    </div>
+                            </a>
+                            <div class="modal fade" id="band-e-thlon" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Band-E-Thlon</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        </div>
+                                    <div class="modal-body">
+                                        <p>After a huge success last year, Band-e-thlon invites musical bands from all across the country to come and fight for the coveted Band-of-the-Year Award. Acoustic Drum kit will be provided for the finals. The event will be held on the 2nd of Feburary, Saturday. The participating bands must take their respective slot numbers from the registration desk on the 2nd of Feburary, Saturday. Details on this will be provided via e-mail to the selected bands. Lots of attractive goodies and cash prize at stake.</p>
+                                        <p><strong>Steps to Register:</strong></p>
+                                        <ol>
+                                            <li>Every band has to send a mail to bandethlon@gmail.com specifying their band name and the contact number of two of their members.</li>
+                                            <li>The time limit for bands to send their tracks is 11:59pm, 12th January, 2019.</li>
+                                            <li>They must necessarily send two of their own recorded tracks to bandethlon@gmail.com for a preliminary scrutiny. On the basis of these tracks, some bands will be selected for the final round. The selected bands will be informed via e-mail by 16th January 2019.</li>
+                                            <li>Selected bands will have to pay registration fees of ₹700 (per band) to the organizers at the Band-e-thelon registration desk by 20th January 2019.</li>
+                                            <li>The registration of a particular band shall be considered incomplete if they fail to pay the registration fees by the last date, even if their place is confirmed in the final round.(Each band member must have a student identity card)</li>
+                                        </ol>
+                                        <p><strong>Rules for Last round:</strong></p>
+                                        <ul>
+                                            <li>No music track or computed beat can be used.</li>
+                                            <li>The stage performance should be minimum 10 minutes long and the band should perform at least 2 songs.</li>
+                                            <li>Sound check should be done within 5 minutes which will be considered from the time the previous band gets down from stage.</li>
+                                            <li>Cigarettes or other inflammable items are not allowed on stage.</li>
+                                            <li>Each band must perform at least one original number.</li>
+                                            <li>The organizers reserve the right to stop a band in the midst of their performance in case the band misbehaves on stage.</li>
+                                            <li>All the band members must produce valid photo-identity cards.</li>
+                                            <li>The judges' decision will be taken as final.</li>
+                                        </ul>
+                                        <p><strong>Total prize money worth ₹8000</strong></p>
+                                        <p><strong>Online Registriation Link:</strong>To be updated soon...</p>
+                                        <p><strong>For further details contact:</strong></p>
+                                        <ul>
+                                            <li><strong>Prakhar Nigotiya:</strong> 9838539200</li>
+                                            <li><strong>DSR Srinivas:</strong> 8374441609</li>
+                                            <li><strong>Aakash Gupta:</strong>9398343474</li>      
+                                        </ul>
+                                        <p><em>The organisers reserve the right to change any of the rules, timings and other details such as prize money at any point of time. In case of any dispute, the decision of the organisers is final.</em></p>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        <!--BandeThlon-->
+                    </div>
+                </div> 
+                    
+                <hr>
+                <div class="card-deck pb-5 mt-5">
+                    <div class="col-sm-5">
+                        <!--Montage-->
+                        <a type="button" class="card card-link" data-toggle="modal" data-target="#montage">
+                                <img class="card-img-top" src="./img/culturalfest/film-background.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                <h5 class="card-title">Montage</h5>
+                                <p class="card-text">Filmmaking is a chance to live many lifetimes. It is a miracle of collaboration.</p>
+                                </div>
+                        </a>
+                        <div class="modal fade" id="montage" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Montage</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                <div class="modal-body">
+                                    <p><strong>General Rules:</strong></p>
+                                    <ul>
+                                        <li>Each participant must submit ONE disc (CD/ DVD/ Blu-ray) which won't be returned to the participant.</li>
+                                        <li>In the main directory of the submitted disc, there should be a folder called "Montage 2018". Any other file or folder in the main directory will be ignored.</li>
+                                        <li>In the "Montage 2018" folder of the main directory of the submitted disc, there should be two files naming - "entry.avi" and "info.txt"- the absence of either resulting in direct disqualification; a file called "entry.srt- if found - will be recognized; everything else in the folder will be ignored.</li>
+                                        <li>The file "info.txt" should clearly mention the participants name. It can include any optional information about "entry.avi".</li>
+                                        <li>Only if the duration of "entry.avi" does not exceed fifteen minutes, it will be judged as a short fiction film with "entry.srt" ( if exists) as the subtitle file.</li>
+                                        <li>Judge's decision will be final in case of any dispute arises.</li>
+                                        <li>Anyone from outside Kolkata mail the "Montage 2018" folder with all the required contents ("entry.avi", "info.txt") mentioned above to example@gmail.com. </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <!--Montage-->
+
+                        <!--Skit-->
+                        <a type="button" class="card card-link mt-3" data-toggle="modal" data-target="#Skit">
+                                <img class="card-img-top" src="./img/culturalfest/skit-background.jpeg" alt="Card image cap">
+                                <div class="card-body">
+                                <h5 class="card-title">Pratidwandi</h5>
+                                <p class="card-text">Do you have an brain full of humor and a heart full of emotion? Then, perhaps, you would be perfect to show off your talent at the Integration's Skit Competition "PRATIDWANDI"</p>
+                                <p class="card-text"><small class="text-muted">Remember, since this is a skit competition and not a prom night, you will not be judged on your costumes but on the quality of your skit!</small></p>
+                                </div>
+                        </a>
+                        <div class="modal fade" id="Skit" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                        <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLongTitle">Skit</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                            </div>
+                                        <div class="modal-body">
+                                            <p><strong>General Rules to Remember:</strong></p>
+                                            <ol>
+                                                <li>Each group will have to submit a registration fees of ?300 on or before the day of the SKIT competition. </li>
+                                                <li>Each team will be given up to 20 minutes to perform a skit on stage and 10 minutes to prepare their costumes.</li>
+                                                <li>Each team may have at most 12 performers.</li>
+                                                <li>The organizers can provide at most 2 tables and a few chairs on demand. Request for any other props shall not be entertained.</li>
+                                                <li>The organizers have the right to stop a team in the midst of their performance if they find any mis behaviour from the part of the teams.</li>
+                                                <li>All the team members must bring valid photo identity cards during registration.</li>
+                                                <li>The judge's decision shall be taken as final.</li>
+                                            </ol>
+                                            <p><strong>Date of Competition:</strong> The competition shall be held in a single round only on 19th January 2019, 11:00 am onwards.</p>
+                                            <p><strong>Registration Fees:</strong> Rs.300/team</p>
+                                            <p><strong>Prize Money:</strong> Worth Rs. 6000. (the distribution will be as per judges' choice)</p>
+                                            <p><strong>Contacts:</strong></p>
+                                            <ul>
+                                                <li><strong>Abhishek Bakshi:</strong> 9748275882</li>
+                                                <li><strong>Shubhajit Sen:</strong> 9830113905</li>
+                                            </ul>
+                                            <p><strong>The organisers reserve the right to change any of the rules, timings and other details such as prize money at any point of time. In case of any dispute, the decision of the organisers is final.</strong></p>
+                                        </div>
+                                </div>
+                        </div>
+                        </div>
+                    <!--Skit-->
+                    </div>
+                    
+                    
+                    
+                    <div class="col-sm-7">
+                    <div class="card-deck">
+                        <!--Cartooning-->
+                                <a type="button" class="card card-link" data-toggle="modal" data-target="#Cartooning">
+                                        <img class="card-img-top" src="./img/culturalfest/cartoonist.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                        <h5 class="card-title">Rangasaj</h5>
+                                        <p class="card-text">"Painting is concerned with all the 10 attributes of sight; which are: Darkness, Light, Solidity and Colour, Form and Position, Distance and Propinquity, Motion and Rest."
+                                               ~ <span class="text-muted">Leonardo da Vinci</span></p>
+                                        </div>
+                                </a>
+                                <div class="modal fade" id="Cartooning" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                                <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLongTitle">Cartooning</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                    </div>
+                                                <div class="modal-body">
+                                                    <p><strong>General Rules:</strong></p>
+                                                    <ol>
+                                                        <li>Participants should be aged between 15years and 30 years.</li>
+                                                        <li>All participants must carry a valid photo-ID proof.</li>
+                                                        <li>Time allotted for each participant is a maximum of 4 hours, starting at 1pm. 
+                                                                Light refreshments would be provided to the participants (without interruptions in the programme)
+                                                                </li>
+                                                        <li>Each participant will work on only one art work without the boundaries of any theme. 
+                                                                We encourage the idea of being true to yourself.
+                                                                </li>
+                                                        <li>Participants need to specify which paper they wish to use at the time of registration itself. 
+                                                                Full size cartridge paper or handmade paper would be provided to them, and the participants can resize it according to their own requirements.
+                                                                </li>
+                                                        <li>Each participant shall bring along the necessary drawing/painting materials as required.</li>
+                                                        <li>Medium of painting will be water colour/poster colour/acrylic/pastel/charcoal/pen & ink/mixed media.</li>        
+                                                         <li>The art work would be displayed during the entire course of Integration and shall be returned to them on the evening of 3rd Feb 2019(Sunday). If you wish to take back your art work, please collect it from the event heads on the aforementioned date.</li>       
+                                                        <li>The decision of the jury shall be final.</li>
+                                                    </ol>
+                                                    <p><strong>Registration Fee:</strong>INR 50/-</p>
+                                                    <p><strong>Prize money worth 5000/-</strong></p>
+                                                    <p><em>The organizers reserve the right to change any of the rules, timings and other details such as prize money at any point of time. In case of any dispute, the decision of the organizers is final.</em></p>
+                                            </div>
+                                        </div>
+                                </div>
+                                </div>
+                        <!--Cartooning-->
+                    </div>
+                    <div class="card-deck mt-3">
+                        <!--Thru-da-lens-->
+                        <a type="button" class="card card-link" data-toggle="modal" data-target="#thru-da-lens">
+                            <img class="card-img-top" src="./img/culturalfest/vintage-camera-wood-wood-background-34886769.jpg" alt="Card image cap">
+                            <div class="card-body">
+                            <h5 class="card-title">Thru-da-Lens</h5>
+                            <p class="card-text">"Life is like photography. We develop from the negatives"</p>
+                            </div>
+                        </a>
+                        <div class="modal fade" id="thru-da-lens" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Thru-da-Lens</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        </div>
+                                    <div class="modal-body">
+                                        <p>Integration 2019 brings you this once in a lifetime opportunity to showcase your talent, leave alone the hi chance to win a total prize worth ₹5,000. and other exciting goodies. Submit your photographs asap.</p>
+                                        <p>This is one of the most coveted photography competitions of Eastern India. Niepce (B&W) and Daguerre (Colour). Those who want to participate, please send your photographs to this mail id: <strong>photography.integration@gmail.com</strong>
+                                        </p>
+                                        <p><strong>IMPORTANT DATES:</strong></p>
+                                        <ul>
+                                            <li>Photo Submission Deadline: 16th January, 2019</li>
+                                            <li>Announcement of result of prelims: 20th January, 2019</li>
+                                            <li>Date of registration of candidates for the final round of judging: 25th January, 2019</li>
+                                            <li>Exhibition: 2nd,3rd February, 2019</li>
+                                            <li>Final Result Declaration: 2nd February, 2019</li>
+                                        </ul>
+                                        <p><strong>General Rules:</strong></p>
+                                        <ul>
+                                            <li>There would be two groups for this competition:
+                                                <ol>
+                                                    <li>The Black & White variant (Niepce)</li>
+                                                    <li>Color photographs (Daguerre)</li>
+                                                </ol>
+                                                There is no restriction on topics for the two variants and no editing other than cropping, color adjustment & brightness and contrast corrections, straightening and spot removal are allowed.
+                                            </li>
+                                            <li>Each participant can submit at most 2 (two) photographs (soft copy) per group, in JPEG/TIFF format, 10" by 15" in size, resolution 300 dpi. File size of a photograph should not exceed 10 MB. Submit only formatted print ready photographs. Note that photos submitted in previous Thru-da-Lens competitions will not be considered for judging.</li>
+                                            <li>A caption/write-up in not more than 50 words, in MS word .doc format MUST BE ACCOMPANIED with each photograph, along with the submitter's name, email id, phone no., photograph legend, camera model, technical specifications, date, time & place of snap shot.</li>
+                                            <li>Watermarking may be allowed. Computer generated images will not be accepted, only images originating as camera taken will be considered. Image manipulations are not allowed except simple editing (those mentioned in Rule 1).</li>
+                                            <li>The photographs are to be mailed to photography.integration@gmail.com. The last date for sending the photographs is 16th January, 2019.</li>
+                                            <li>The best 30 entries from each group will be considered for final round of competition and will be displayed during 2nd-3rd February, 2019. This first round of judging will be done by 20th January, 2019, after which qualifying participants can register. Judges for the first round are: "To be announced soon..."</li>
+                                            <li>The senders of the selected photographs will be notified through email and phone. The registration fee for the selected photographs will be Rs. 100/- each and must be done by 25th January, (12 noon).</li>
+                                            <li>Only duly registered photographs will be considered for the final judgment.</li>
+                                            <li>The final judging and announcement of results will be done by 20th January 2019 by a panel of Judges.</li>
+                                            <li>From each group, there would be two winning photographs. The prizes are worth Rs 1500 (First Prize), Rs 1000 (Second Prize) on each category.</li>
+                                        </ul>
+                                        <p><strong>For further details, contact:</strong></p>
+                                        <ul>
+                                            <li><strong>Anik Burman:</strong>9836775472</li>
+                                            <li><strong>Souradipto Ghosh Dastidar:</strong>8420678429</li>
+                                        </ul>
+                                        <p><em>The organisers reserve the right to change any of the rules, timings and other details such as prize money at any point of time. In case of any dispute, the decision of the organisers is final.</em></p>
+                                        <p><strong>Online Registration Link:</strong>To be updated soon...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Thru-da-lens-->
+                    </div>
+                    </div>
+                     
+                </div> 
+                     
+                <hr>
+                <div class="card-deck pb-5 mt-5">  
+                    <div class="col-sm-6">
+                        <!--Shabdoshel-->
+                    <a type="button" class="card card-link" data-toggle="modal" data-target="#pen-fight">
+                        <img class="card-img-top" src="./img/culturalfest/Creative-writing.png" alt="Card image cap">
+                        <div class="card-body">
+                        <h5 class="card-title">Pen-Fight and Shabdoshel</h5>
+                        <p class="card-text">Integration organises Pen Fight and Shobdo Shel, english, Hindi and Bengali creative writing contest for all budding thinkers.</p>
+                            </div>
+                    </a>
+                    <div class="modal fade" id="pen-fight" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                    <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLongTitle">Pen Fight and Shabdoshel</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        </div>
+                                    <div class="modal-body">
+                                        <p>"What is the most resilient parasite?"</p>
+                                        <p>"An idea. Resilient... highly contagious. Once an idea has taken hold of the brain it's almost impossible to eradicate."</p>
+                                        <p>Have you ever envied a buzzard on its flamboyant flight with wings of freedom? Or the unsheathed sword with its unearthly swagger? Are your creative springs in dire need of being hearkened to, freed and uncovered?</p>
+                                        <p>Well, then this is where you belong. At Integration 2018, we offer the perfect opportunity for all you blue-sky enthusiasts to pen down your ideas and be rest assured that for once reality will take the backseat and imagination will occupy the front.</p>
+                                        <p>All students must carry a student-identity card.</p>
+                                        <p><strong>Registration Fee:</strong> ₹50 per person</p>
+                                        <p><strong>Total Prize Money</strong> worth ₹6000.</p>
+                                            
+                                    </div>
+                            </div>
+                    </div>
+                    </div>
+                    <!--Shabdoshel-->
+                    </div>
+
+
+                    <div class="col-sm-6">
+                        <!--Prahelika-->
+                            <a type="button" class="card card-link" data-toggle="modal" data-target="#quiz">
+                                <img class="card-img-top" src="./img/culturalfest/prahelika-quiz.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                <h5 class="card-title">Prahelika</h5>
+                                <p class="card-text">Climb to the top with the power of knowledge!</p>
+                                    </div>
+                            </a>
+                            <div class="modal fade" id="quiz" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                            <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Prahelika</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                                </div>
+                                            <div class="modal-body">
+                                                <p><strong>Rules:</strong></p>
+                                                <ol>
+                                                    <li>Your eligibility of participating in either of the quizzes is to be a college/school student or be less than 25 years of age.</li>
+                                                    <li>We require all of you to carry and produce college/school ID card or a proof of your birth date, when asked. This is the only thing we are strict about, except timings.</li>
+                                                    <li>Three person per team.</li>
+                                                </ol>
+                                                <p><strong>Entry Fees:</strong></p>
+                                                <ul>
+                                                    <li> Rs.50 per person for Prahelika only. </li>
+                                                    <li> Rs.50 per person for Yatra only.</li>
+                                                    <li> If you participate in both Prahelika and Yatra you have to pay Rs.75
+                                                        per person.</li>
+                                                </ul>
+                                                <p><strong>Prize:</strong> If you can make it to the top, you will take prize worth Rs.12000 for the night. And if you miss the pole position by a whisker and come second, you still have prize worth Rs.8000 to boast of. </p>
+                                        </div>
+                                    </div>
+                            </div>
+                            </div>
+                        <!--Prahelika-->
+                    </div>
+                </div>
+                        
+                </div>
+            </div>
+    </main>
+
+
+    <!-- #################################################################### -->
+
+   <!--Footer-->
+   <footer class="page-footer font-small darkgrey">
+
+    <!-- Social buttons -->
+    <div class="danger-color">
+        <div class="container">
+            <!--Grid row-->
+            <div class="row py-4 d-flex align-items-center">
+
+                <!--Grid column-->
+                <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                    <h6 class="mb-0 white-text">Our Valuable Sponsors</h6>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-6 col-lg-7 text-center text-md-left" id = "footer-sponsor">
+                    </div>
+                <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+        </div>
+    </div>
+    <!-- Social buttons -->
+    </footer>
+    <!--Footer Links-->
+
+<!--Footer-->
+<footer class="page-footer font-small unique-color-dark pt-4">
+
+    <!--Footer Links-->
+    <div class="container mt-5 mb-4 text-center text-md-left">
+    <div class="row mt-3">
+
+        <!--First column-->
+        <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+            <h6 class="text-uppercase font-weight-bold">
+                <strong>Integration 2019</strong>
+            </h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>The Annual Techno-Cultural-Sports festival of Indian Statistical Institute, Kolkata, here at 203, Barrackpore Trunk Road, Kolkata - 700108.</p>
+        </div>
+        <!--/.First column-->
+
+        <!--Second column-->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase font-weight-bold">
+                <strong>Events</strong>
+            </h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+                <a href="#!">Chess</a>
+            </p>
+            <p>
+                <a href="#!">Quizzes</a>
+            </p>
+            <p>
+                <a href="#!">Band-E-Thlon</a>
+            </p>
+            <p>
+                <a href="#!">Alaap</a>
+            </p>
+        </div>
+        <!--/.Second column-->
+
+        <!--Third column-->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase font-weight-bold">
+                <strong>Useful links</strong>
+            </h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+                <a href="http://www.isical.ac.in/~mtrp">MTRP</a>
+            </p>
+            <p>
+                <a href="#!">Hackathon</a>
+            </p>
+            <p>
+                <a href="#!">Showdowns Websites</a>
+            </p>
+            <p>
+                <a href="http://www.isical.ac.in">ISI homepage</a>
+            </p>
+        </div>
+        <!--/.Third column-->
+
+        <!--Fourth column-->
+        <div class="col-md-4 col-lg-3 col-xl-3">
+            <h6 class="text-uppercase font-weight-bold">
+                <strong>Contact</strong>
+            </h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+                <i class="fa fa-home mr-3"></i> Integration 2019</p>
+            <p>
+                <i class="fa fa-envelope mr-3"></i> isi.integration@gmail.com</p>
+            <p>
+                <i class="fa fa-phone mr-3"></i> +91 7980605492 (Sayantan Basu)</p>
+            <p>
+                <i class="fa fa-phone mr-3"></i> +91 9051124171 (Rounak Ray)</p>
+        </div>
+        <!--/.Fourth column-->
+
+    </div>
+    </div>
+    <!--/.Footer Links-->
+
+    <!--Copyright-->
+    <div class="footer-copyright py-3 text-center">
+        © 2018 Copyright:
+        <a href="https://www.isical.ac.in/integration"> Integration.ISI</a>
+        <script type="text/javascript" src="http://counter2.fcs.ovh/private/counter.js?c=99dc7e2d3dfdbbcebc67fdffaf25f6a6"></script>
+        
+    </div>
+    <!--/.Copyright-->
+
+</footer>
+<!--Footer-->
+
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+</html>

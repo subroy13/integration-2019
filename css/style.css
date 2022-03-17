@@ -1,0 +1,400 @@
+@font-face {
+    font-family: norton;
+    src: url("../font/norton/NORTON__.TTF");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: GOT;
+    src: url("../font/game-of-thrones/Game\ of\ Thrones.ttf");
+}
+
+html,
+body,
+header,
+#intro {
+    height: 100%;
+}
+
+body {
+    background: #151837;
+    color: #fff;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+hr {
+    background: #fff;
+}
+
+#intro {
+    background: url("../img/fest_cover.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#intro h2 {
+    font-family: GOT;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px black, 3px 3px 8px black;
+    font-size: 350%;
+}
+
+#intro h2 span {
+    font-size: 150%;
+}
+
+#intro h4 {
+    text-shadow: 2px 2px 5px blue, 3px 3px 8px white;
+}
+
+#celebrate {
+    font-family: GOT !important;
+}
+
+#celebrate span {
+    font-size: 150%;
+}
+
+#mainbtn {
+    font-family: GOT;
+    background: darkslateblue;
+    border-radius: 1.5em;
+    transition-duration: 1000;
+}
+
+#mainbtn:hover {
+    background: darkblue;
+    border: 5px solid white;
+    color: #fff;
+    font-size: 1em;
+}
+
+.gylphs {
+    color: #fff;
+    float: right;
+}
+
+.carousel {
+    border-bottom: 25px solid #222222;
+    width: 80%;
+    margin: auto;
+}
+
+.carousel-caption {
+    bottom: 50px;
+    text-shadow: 5px 5px 15px black;
+}
+
+a:active {
+    border: none;
+}
+
+.carousel-btn-area {
+    max-width: 50px;
+    background-color: #888888;
+    background-blend-mode: multiply;
+}
+
+.circle-area {
+    margin: 80px 20px;
+    float: left;
+    width: 30%;
+    box-sizing: border-box;
+}
+
+.circle {
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    margin: 0 auto;
+    width: 20em;
+    height: 20em;
+    overflow: hidden;
+    transform: translateZ(0);
+}
+
+.circle h1 {
+    color: rgba(189, 185, 199, 0);
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-size: 2em;
+    line-height: 1em;
+    vertical-align: middle;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+    user-select: none;
+    transition: color 0.8s ease-in-out;
+}
+
+.circle:before,
+.circle:after {
+    border-radius: 50%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    box-shadow: inset 10.6em 0 0 rgba(30, 140, 209, 0.2), inset 0 10.6em 0 rgba(30, 140, 209, 0.2),
+        inset -10.6em 0 0 rgba(30, 140, 209, 0.2), inset 0 -10.6em 0 rgba(30, 140, 209, 0.2);
+    transition: box-shadow 0.75s;
+}
+
+/* We rotate the :after pseudo-element to get the edge from the corner, we could also just do that with box-shadows. */
+
+.circle:after {
+    transform: rotate(45deg);
+}
+
+.circle:hover:before,
+.circle:hover:after {
+    box-shadow: inset 0.86em 0 0 rgba(255, 0, 0, 0.5), inset 0 0.86em 0 rgba(252, 150, 0, 0.5),
+        inset -0.86em 0 0 rgba(0, 255, 0, 0.5), inset 0 -0.86em 0 rgba(0, 150, 255, 0.5);
+}
+
+.circle:hover > h1 {
+    color: rgba(185, 185, 185, 1);
+}
+
+.circle:hover > p {
+    color: rgba(185, 185, 185, 1);
+}
+
+.circle-cover {
+    opacity: 1;
+}
+
+.circle-cover:hover {
+    opacity: 0;
+    transition: 1000;
+}
+
+.btn-team {
+    background: black;
+    border: 5px #fff solid;
+    border-radius: 20px;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    height: 150px;
+    font-size: 200%;
+    font-weight: bold;
+    color: white;
+    text-shadow: 3px 3px 10px black;
+}
+
+.btn-team:hover {
+    background: transparent;
+    transform: scale3d(1.2);
+    transition-duration: 5s;
+}
+
+.media-left {
+    max-width: 175px;
+    height: 180px;
+}
+
+.modal-body {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+.modal-body .media {
+    display: inline-block;
+}
+
+.md-form.form-sm .prefix ~ input,
+.md-form.form-sm .prefix ~ textarea {
+    color: white;
+}
+
+#submit-btn {
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#submit-btn:hover {
+    color: white;
+}
+
+#submit-btn:visited {
+    color: white;
+}
+
+.wrapper {
+    margin: 3em 0;
+}
+
+a.mtrp-link,
+a.mtrp-link:visited,
+a.mtrp-link:hover,
+a.mtrp-link:active {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: relative;
+    transition: 0.5s color ease;
+    text-decoration: none;
+    color: #81b3d2 !important;
+    font-size: 200%;
+}
+a.mtrp-link:hover {
+    color: #d73444 !important;
+}
+a.before:before,
+a.after:after {
+    content: "";
+    transition: 0.5s all ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+}
+a.before:before {
+    top: -0.25em;
+}
+a.after:after {
+    bottom: -0.25em;
+}
+a.before:before,
+a.after:after {
+    height: 5px;
+    height: 0.35rem;
+    width: 0;
+    background: #d73444 !important;
+}
+
+a.mtrp-link:after {
+    right: 0;
+}
+a.before:hover:before,
+a.after:hover:after {
+    width: 100%;
+}
+
+#small-device-indicator {
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .circle-area {
+        width: 100%;
+        float: none;
+    }
+}
+
+@media (min-width: 1000px) {
+    #small-device-indicator {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .h3-responsive {
+        font-size: 15px;
+        font-weight: bold;
+        background: rgba(100, 100, 100, 0.3);
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .carousel-indicators {
+        display: none;
+    }
+
+    .carousel {
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    .carousel-caption {
+        margin-bottom: 0;
+        bottom: 0;
+    }
+
+    #intro h2 {
+        font-size: 40px;
+    }
+
+    #intro h4 {
+        font-size: 15px;
+        font-weight: 500;
+        background: rgba(100, 100, 100, 0.15);
+    }
+
+    #intro h3 {
+        font-size: 20px;
+    }
+
+    #intro h5 {
+        font-size: 15px;
+    }
+
+    #intro h3 img {
+        transform: scale(0.6);
+    }
+
+    .circle:before,
+    .circle:after {
+        box-shadow: inset 0.86em 0 0 rgba(255, 0, 0, 0.5), inset 0 0.86em 0 rgba(252, 150, 0, 0.5),
+            inset -0.86em 0 0 rgba(0, 255, 0, 0.5), inset 0 -0.86em 0 rgba(0, 150, 255, 0.5);
+    }
+
+    .circle > h1 {
+        color: rgba(185, 185, 185, 1);
+    }
+
+    .circle-area {
+        width: 90%;
+        margin: auto;
+        margin-top: 50px;
+        margin-top: 50px;
+    }
+
+    .btn-team {
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 100%;
+    }
+
+    a.mtrp-link,
+    a.mtrp-link:visited,
+    a.mtrp-link:hover,
+    a.mtrp-link:active {
+        font-size: 150%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    #small-device-indicator {
+        display: block;
+    }
+}
+
+@media (max-width: 500px) {
+    .circle {
+        width: 15em;
+        height: 15em;
+    }
+
+    .extra-break {
+        display: none;
+    }
+
+    .showdown img {
+        float: none !important;
+        width: 75% !important;
+        margin-bottom: 1rem;
+    }
+
+    .showdown p {
+        float: none !important;
+        width: 100% !important;
+    }
+}

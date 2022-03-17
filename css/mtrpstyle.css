@@ -1,0 +1,56 @@
+body {
+    background: url('../img/mtrp/mtrp-cover.jpg');
+    background-repeat: repeat;
+}
+
+main {
+    margin-top: 80px;
+    font-weight: 500;
+}
+
+.jumbotron {
+    background: #666;
+    background-image: url('../img/team/mtrp-cover.jpg');
+    background-blend-mode: overlay;
+    color: #fff;
+    text-shadow: 3px 3px 5px black, 5px 5px 8px black;
+    font-weight: bold !important;
+}
+
+.jumbotron .lead {
+    text-shadow: 1px 1px 2px black, 2px 2px 3px black, 2px 2px 5px black;
+}
+
+.row .col-6 a {
+    display: block;
+}
+
+.gylphs {
+    color: #fff;
+}
+
+#program ol {
+    list-style-type: square;
+}
+
+
+#mobile-device {
+    display: none;
+}
+
+#gallery img:hover {
+    box-shadow: 2px 2px 3px black, 5px 5px 8px black;
+    transform: scale(1.05);   
+}
+
+
+@media (max-width: 700px) {
+    
+    #mobile-device {
+        display: block;
+        height: 50px;
+        background: transparent;
+    }
+    
+}
+

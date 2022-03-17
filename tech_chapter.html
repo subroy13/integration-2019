@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Subhrajyoty Roy">
+    <title>Tech Chapter | Integration</title>
+    <link rel="icon" href="./img/integration_logo_icon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/techstyle.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <script src="./js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("body").css({
+                'overflow-x':'hidden',
+                'width':'100%',
+                'overflow-y':'auto',
+            });
+            $(".card-link").click(function(){
+                $("main").css({
+                    background: "#444"
+                });
+            });
+            $(".close").click(function(){
+                $("main").css({
+                    background: "url('./img/techfest/tech-cover.png')",
+                    'background-size': 'cover',
+                });
+            });
+            var text = "<marquee>";
+            var i;
+            for (i=1; i<22; i++) {
+                text += "<img src='./img/sponsors/"+ i +".jpg' style = 'height:75px'>";
+            }
+            text += "</marquee>";
+            $('#footer-sponsor').html(text);
+        });
+    </script>
+    <style>
+        .btn-primary a {
+            color: ghostwhite;
+        }
+    </style>    
+</head>
+<body>
+    <header>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg unique-color-dark fixed-top">
+            <div class="container">
+
+                <a class="navbar-brand" style="color:#fff" href="./index.html">
+                    <img src="./img/Integration_logo.png" height="30" class="d-inline-block align-top" alt="">
+                    Integration 2019
+                </a>
+                    
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="https://mail.google.com/mail/u/0/#inbox?compose=new">
+                                <i class="fa fa-envelope ml-5 gylphs"></i>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                                <a href="https://www.facebook.com/integration.isi">
+                                    <i class="fa fa-facebook-official ml-5 gylphs"></i>
+                                </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.twitter.com/integration_isi">
+                                <i class="fa fa-twitter ml-5 gylphs"></i>
+                            </a>
+                        </li>
+
+                            
+                    </ul>
+
+            </div>
+        </nav>
+        <!--/.Navbar-->
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="text-center">
+                <h1 class="mb-5 mt-5 pt-5 display-1" id="main-title">Tech Chapter</h1>
+                <hr>
+                <h1 class="mb-3 mt-3" id="festname">Integration <span>2019</span>
+                    <img src="./img/Integration_logo.png" style="width: 50px">
+                </h1>
+                <hr>
+            </section>
+            <div class="card-deck pb-5 mt-5">
+            <div class="col-sm-5">
+                <!-- Hackathon-->
+                <a type="button" class="card card-link" data-toggle="modal" data-target="#Hackathon">
+                        <img class="card-img-top" src="./img/techfest/code-coding-computer-330771.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                        <h5 class="card-title">Hackathon</h5>
+                        <p class="card-text">Description of Hackathon.</p>
+                        <p class="card-text"><small class="text-muted">Time and Venue</small></p>
+                        </div>
+                </a>
+                <div class="modal fade" id="Hackathon" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Hackathon</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                        <div class="modal-body">
+                            <p>More information</p>
+
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <!--Hackathon-->
+
+                <!--MATHGEEK-->
+                <a type="button" class="card card-link mt-3" data-toggle="modal" data-target="#Mathgeek">
+                        <img class="card-img-top" src="./img/techfest/mathgeek_cover.jpg" alt="Card image cap">
+                        <div class="card-body">
+                        <h5 class="card-title">MATHGEEK</h5>
+                        <p class="card-text">Mathgeek is an online innovative mathematical competition, giving you opportunity to show off your talent of solving mathematical riddles.</p>
+                        <p class="card-text"><small class="text-muted">Prize worth Rs. 2,000 is waiting for you to win!</small></p>
+                        </div>
+                </a>
+                <div class="modal fade" id="Mathgeek" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">MATHGEEK</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                        <div class="modal-body">
+                            <p><strong>Rules:</strong></p>
+                            <ol>
+                                <li>It is an online event. So, you are recommended to use a computer rather than mobile devices.</li>
+                                <li>There are 9 rounds.</li>
+                                <li>Each round has 3 unlocking puzzles which helps to go from one round to another.</li>
+                                <li>Questions will be such that not much professional knowledge of mathematics 
+                                    is required (upto +2 and some undergrad things) so that everybody 
+                                    will be on same page.</li>
+                                <li>It is open to all age groups.</li> 
+                                <li><strong>Entry Fees:</strong> 50 Rs. per head, which must be paid at the time of registration.</li>
+                                <li>Prize money worth Rs. 2,000</li>
+                                <li>The event will be held on 26th January, 2019 12:00 p.m. to 27th January, 2019 12:00 p.m.</li>
+                                <li>The last date for registering for the event is 25th January, 2019 12:00 p.m.</li>
+                            </ol>
+                            <p><strong>Contacts:</strong></p>
+                            <ul>
+                                <li><strong>Deep Ghoshal:</strong> 8906723662</li>
+                                <li><strong>Aditya Ghosh:</strong> 9163658233</li>
+                                <li><strong>Anirban Nath:</strong> 9051227133</li>
+                            </ul>
+                            <p><strong>The organisers reserve the right to change any of the rules, timings and other details such as prize money at any point of time. In case of any dispute, the decision of the organisers is final.</strong></p>
+                            <button class="btn btn-primary"><a href="./mg_reg.html" target="_blank">Click here to Register</a></button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <!--MATHGEEK-->
+            </div>
+
+            <div class="col-sm-7">
+                    <div class="card" style="background: transparent">
+                        <div class="card-deck">
+                                <!--Tech Quiz-->
+                                <a type="button" class="card card-link" data-toggle="modal" data-target="#techquiz">
+                                        <img class="card-img-top" src="./img/techfest/questionMark_blue_red.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                        <h5 class="card-title">Tech Quiz</h5>
+                                        <p class="card-text">Science and technology is unanimously hailed as the most evolved form of human interest. In Tech Quiz it helps if you
+                                        are acquainted with the cornerstones in it's diverse and long trail. One of the most popular events of Integration,
+                                        Tech Quiz tests not only your tech trivia but also gives you ample scope to exercise your grey cells. With great prizes
+                                        at stake, it's definitely an event you don't want to miss.</p>
+                                        </div>
+                                </a>
+                                <div class="modal fade" id="techquiz" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Tech Quiz</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                                </div>
+                                            <div class="modal-body">
+                                                <p><strong>General Rules and Guidelines:</strong></p>
+                                                <ul>
+                                                    <li>Teams should be of two members(both need not be neccesarily from the same school/college)</li>
+                                                    <li><strong>Registration fee:</strong> INR 60 per team</li>
+                                                    <li><strong>Quizmasters:</strong>Will be updated soon...</li>
+                                                    <li><strong>Venue:</strong> ISI Kolkata campus</li>
+                                                    <li><strong>Date:</strong>Will be updated soon...</li>
+                                                    <li><strong>Time:</strong> 11 pm onwards.</li>
+                                                    <li>For further informtion, Contact:</li>                                                    </li>
+                                                </ul>
+                                                
+                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Tech Quiz-->
+
+                                <!--Code-IT-->
+                                <a type="button" class="card card-link" data-toggle="modal" data-target="#Code-IT">
+                                    <img class="card-img-top" src="./img/techfest/pexels-photo-51415.jpeg" alt="Card image cap">
+                                    <div class="card-body">
+                                    <h5 class="card-title">CODE-IT</h5>
+                                    <p class="card-text">CODE-IT is the coding competition of the INTEGRATION.</p>
+                                    <p class="card-text text-muted">Code-IT is powered by TEOCO Corporation, our event partner for this.
+                                            HackerEarth is the programming partner for the event.</p>
+                                    </div>
+                                </a>
+
+                                <div class="modal fade" id="Code-IT" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">CODE-IT</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                                </div>
+                                            <div class="modal-body">
+                                                <p><strong>Event Schedule:</strong>  16-Jan-2016, 9 pm - 12 am</p>
+                                                <p><strong>Platform:</strong> HackerEarth.</p>
+                                                <p><strong>Link to the Website:</strong> 
+                                                    <a href="https://www.hackerearth.com/isi-kolkata-code-it-2016/">https://www.hackerearth.com/isi-kolkata-code-it-2016/</a>
+                                                </p>
+                                                <p>The contest is free for everyone and you can participate from home. </p>
+                                                <p><strong>Event Description, Eligibility and Cash Prizes:</strong></p>
+                                                <ul>
+                                                    <li> This is a 3 hour online coding contest consisting of
+                                                         about 5-6 questions.</li>
+                                                    <li> This will be an individual coding contest. 
+                                                        Participants should register on HackerEarth before 
+                                                        competing if they already don't have a HackerEarth account. 
+                                                        They may register by going to the url 
+                                                        <a href="https://www.hackerearth.com/isi-kolkata-code-it-2016/">https://www.hackerearth.com/isi-kolkata-code-it-2016/</a>
+                                                    </li>
+                                                    <li> Only Indians by nationality are eligible for the prizes.</li>
+                                                    <li> Top three securing position will get the prize if they 
+                                                        are eligible.</li>
+                                                    <li> Cash prizes are : Rs 1500 for 1st position, Rs 1000 for 2nd position and Rs 500 for 3rd position.
+                                                        </li>
+                                                    <li> To recieve prize one has to produce one valid government issued identity card (or institution identity card in case of student) of their own.
+                                                        </li>
+                                                </ul>
+                                                <p><strong>General Rules:</strong></p>
+                                                <ol>
+                                                    <li>The organisers reserve the rights to change any or all of the above rules as they deem fit. Change in rules, if any will be highlighted on the website and notified to the registered participants.</li>
+                                                    <li>Note that at any point of time, the latest information will be that which is on the website.</li>
+                                                    <li>Plagiarism is strictly prohibited. If found then the individuals will be disqualified from the event.</li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Code-IT-->
+                        </div>
+
+                        <div class="card-deck mt-3">
+                            <!--PUBG Mobile-->
+                                <a type="button" class="card card-link" data-toggle="modal" data-target="#PUBG">
+                                    <img class="card-img-top" src="./img/techfest/PUBG-Mobile.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                    <h5 class="card-title">PUBG Mobile</h5>
+                                    <p class="card-text">Indian Statistical Institute, Kolkata presents an online platform to team up with your friends and compete against the world in PUBG Mobile, the game that needs no introduction.</p>
+                                    </div>
+                                </a>
+
+                                <div class="modal fade" id="PUBG" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">PUBG Mobile</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                                </div>
+                                            <div class="modal-body">
+                                                <p><strong> TOURNAMENT FORMAT</strong></p>
+                                                <ul>
+                                                    <li>ALL MATCHES WOULD BE TPP, ASIA, ERANGEL, SQUAD format.</li>
+                                                    <li>The tournament will be conducted in two stages - Prelims and Finals. Depending on
+                                                    the number of participating teams a set number of top teams will qualify to the final
+                                                    rounds and the others will be eliminated.</li>
+                                                    <li>Every team can register at max for 3 games. The best performance amongst the two
+                                                    games will be considered. Incase a team goes to the finals both times then the team with most kills amongst the top
+                                                    team to not make into the finals of the two groups will qualify into the finals. Eg: Say 10 teams are selected for the
+                                                    finals from each group and 1 team has been selected in two groups(Group 1 and Group 2) then between the 11th team in
+                                                    group 1 and 11th team in group 2 the team with more kills will qualify.</li>
+                                                </ul>
+                                                <p><strong>PAYMENT PROCEDURE:</strong></p>
+                                                <p><strong>Per person Entry Fee :</strong>Rs. 100 per game(Max 3 games)</p>
+                                                <ol>
+                                                    <li><strong>STEP 1:</strong>To register please pay the required amount to
+                                                        <ul>
+                                                            <li><strong>Via PayTM:</strong> 8017168465</li>
+                                                            <li><strong>Via UPI:</strong> 8017168465@upi</li>
+                                                            <li><strong>Account Number:</strong>551611610000001</li>
+                                                            <li><strong>IFSC code-</strong>BKID0005516</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><strong>STEP 2:</strong>After the payment is done send a whatsapp message to (8017168465,9903235656)[BOTH] with your in-game name and
+                                                    the transaction id of your payment along with the payment mode.</li>
+                                                    <li><strong>Step 3:</strong>Once you have sent the whatsapp message we will add you to a whatsapp group of our event. The room id and
+                                                    password will be shared via this whatsapp group on the day of the tournament.</li>
+                                                </ol>
+                                                <p>
+                                                    The number of group matches will depend on the number of participating teams.There will be a final round where top few
+                                                    teams(This will also depend on the number of participating members) from each group who will fight it out for the Prize
+                                                    Pool Money!
+                                                    Stay tuned for more updates!
+                                                </p>
+                                                <p><strong>CONTACTS</strong></p>
+                                                <ul>
+                                                    <li>Ayush-8017168465</li>
+                                                    <li>Diganta-9903235656</li>
+                                                </ul>
+                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <!--PUBG Mobile-->
+                        </div>
+                    </div>
+            </div>
+            </div>
+   
+        </div>
+    </main>
+
+
+    <!-- #################################################################### -->
+
+   <!--Footer-->
+   <footer class="page-footer font-small darkgrey">
+
+    <!-- Social buttons -->
+    <div class="primary-color">
+        <div class="container">
+            <!--Grid row-->
+            <div class="row py-4 d-flex align-items-center">
+
+                <!--Grid column-->
+                <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                    <h6 class="mb-0 white-text">Our Valuable Sponsors</h6>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-6 col-lg-7 text-center text-md-left" id="footer-sponsor">
+                </div>
+                <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+        </div>
+    </div>
+    <!-- Social buttons -->
+    </footer>
+    <!--Footer Links-->
+
+<!--Footer-->
+<footer class="page-footer font-small unique-color-dark pt-4">
+
+    <!--Footer Links-->
+    <div class="container mt-5 mb-4 text-center text-md-left">
+    <div class="row mt-3">
+
+        <!--First column-->
+        <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+            <h6 class="text-uppercase font-weight-bold">
+                <strong>Integration 2019</strong>
+            </h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>The Annual Techno-Cultural-Sports festival of Indian Statistical Institute, Kolkata, here at 203, Barrackpore Trunk Road, Kolkata - 700108.</p>
+        </div>
+        <!--/.First column-->
+
+        <!--Second column-->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase font-weight-bold">
+                <strong>Events</strong>
+            </h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+                <a href="#!">Chess</a>
+            </p>
+            <p>
+                <a href="#!">Quizzes</a>
+            </p>
+            <p>
+                <a href="#!">Band-E-Thlon</a>
+            </p>
+            <p>
+                <a href="#!">Alaap</a>
+            </p>
+        </div>
+        <!--/.Second column-->
+
+        <!--Third column-->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase font-weight-bold">
+                <strong>Useful links</strong>
+            </h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+                <a href="http://www.isical.ac.in/~mtrp">MTRP</a>
+            </p>
+            <p>
+                <a href="#!">Hackathon</a>
+            </p>
+            <p>
+                <a href="#!">Showdowns Websites</a>
+            </p>
+            <p>
+                <a href="http://www.isical.ac.in">ISI homepage</a>
+            </p>
+        </div>
+        <!--/.Third column-->
+
+        <!--Fourth column-->
+        <div class="col-md-4 col-lg-3 col-xl-3">
+            <h6 class="text-uppercase font-weight-bold">
+                <strong>Contact</strong>
+            </h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+                <i class="fa fa-home mr-3"></i> Integration 2019</p>
+            <p>
+                <i class="fa fa-envelope mr-3"></i> isi.integration@gmail.com</p>
+            <p>
+                <i class="fa fa-phone mr-3"></i> +91 7980605492 (Sayantan Basu)</p>
+            <p>
+                <i class="fa fa-phone mr-3"></i> +91 9051124171 (Rounak Ray)</p>
+        </div>
+        <!--/.Fourth column-->
+
+    </div>
+    </div>
+    <!--/.Footer Links-->
+
+    <!--Copyright-->
+    <div class="footer-copyright py-3 text-center">
+        © 2018 Copyright:
+        <a href="https://www.isical.ac.in/integration"> Integration.ISI</a>
+        <script type="text/javascript" src="http://counter2.fcs.ovh/private/counter.js?c=99dc7e2d3dfdbbcebc67fdffaf25f6a6"></script>
+        
+    </div>
+    <!--/.Copyright-->
+
+</footer>
+<!--Footer-->
+
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+</html>
